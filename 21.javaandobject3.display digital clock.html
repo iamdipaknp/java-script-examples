@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+	function timedText()
+	{
+		var d=new Date();
+		var hrs=d.getHours();
+		var mins=d.getMinutes();
+		var sec=d.getSeconds();
+
+		document.getElementById('txt').value=String(hrs) + ":" + String(mins) + ":" + String(sec)
+	}
+</script>
+
+
+<form>
+	<input type="text" id="txt" size="35" name="">
+	<h1><input type="button" value="Display DIGI Clock" onclick="timedText()"><h1>
+</form></body>
+</html>
