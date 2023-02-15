@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function changecolor()
+	{
+		var v;
+		v=((Math.random()*100000)+3);
+		document.bgColor=v;
+		setTimeout("changecolor()",1000);
+	}
+</script>
+</head>
+<body onload="changecolor();">
+
+</body>
+</html>

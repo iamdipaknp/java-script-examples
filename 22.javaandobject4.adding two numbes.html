@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function add_number(){
+		var result, num1, num2;
+
+		num1 = parseFloat(document.addform.txtnum1.value);
+		num2 = parseFloat(document.addform.txtnum2.value);
+		result = num1 + num2;
+
+		document.addform.txtresult.value=result;
+	}
+
+	function clear_button(){
+		document.addform.txtnum1.value="0";
+		document.addform.txtnum2.value="0";
+		document.addform.txtresult.value="0";
+	}
+</script>
+</head>
+<body>
+
+<h1 style="background-color: lightblue">Add 2 Numbers and Sum of it</h1>
+<form name="addform">
+	<br>
+	<pre>
+		First Value:    <input type="text" name="txtnum1" size="20" value="0"> <br>
+		Second Value:   <input type="text" name="txtnum2" size="20" value="0"> <br><br>
+		<input type="button" name="" value="Click to Answer" onclick="add_number()"> <input type="text" name="txtresult" size="20" value="0"> <br><br>
+	              <input type="button" value="Click Clear to Reset" onclick="clear_button()">
+	</pre>
+
+</form>
+</body>
+</html>
