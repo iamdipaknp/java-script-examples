@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["firstName"].value;
+  var y = document.forms["myForm"]["lastName"].value;
+  if (x == "" || x == null) {
+    alert("First Name must be filled out");
+    return false;
+  }
+  else if (y == "" || y == null)
+  	{
+    alert("Last Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>validation of empty input field</h2>
+<p>Try to submit the form without entering any text.</p>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+ 
+  <pre>
+		First Name: <input type="text" name="firstName"> <br>
+		Last Name:  <input type="text" name="lastName"> <br>
+				<input type="submit" name="submit" value="Submit">
+	</pre>
+</form>
+
+</body>
+</html>
